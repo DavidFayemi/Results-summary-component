@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="font-primary text-s font-medium">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- display site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- Tailwind styles -->
+    <link rel="stylesheet" href="./styles/tailwind.css" />
+    <!-- Button hover state -->
+     <link rel="stylesheet" href="./styles/continue-button-hover.css">
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <div
+      class="md:bg-neutral-pale-blue min-h-screen w-full md:flex items-center justify-center md:p-6"
+    >
+      <div
+        class="grid grid-cols-1 grid-rows-1 gap-0 md:grid-cols-2 bg-white md:rounded-3xl md:overflow-hidden md:shadow-2xl shadow-neutral-dark-gray-blue"
+      >
+        <div
+          class="flex flex-col items-center px-8 py-4 bg-gradient-to-b from-gradients-background-light-slate-blue justify-between to-gradients-background-light-royal-blue rounded-b-3xl text-white md:rounded-3xl md:max-w-xs"
+        >
+          <p class="text-neutral-light-lavender">Your Result</p>
+          <div
+            class="w-40 h-40 bg-gradient-to-b from-gradients-circle-violet-blue to-gradients-circle-persian-blue rounded-full flex flex-col items-center justify-center mt-4 mb-2"
+          >
+            <p class="text-5xl font-extrabold mb-2">76</p>
+            <p class="text-neutral-light-lavender text-xs">of 100</p>
+          </div>
+
+          <h2 class="text-xl my-3">Great</h2>
+          <p class="mx-auto text-neutral-light-lavender text-center mb-4">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+        <div class="p-6 bg-white md:px-10">
+          <p class="text-neutral-dark-gray-blue font-bold">Summary</p>
+
+          <div class="py-1 pb-3 gap-5">
+            <div
+              class="flex justify-between items-center px-4 py-3 rounded-lg bg-primary-light-red bg-opacity-5 my-3"
+            >
+              <div class="flex gap-3">
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                <span class="text-primary-light-red">Reaction</span>
+              </div>
+              <div class="font-bold">
+                <span class="text-neutral-dark-gray-blue">80</span>
+                <span class="text-neutral-dark-gray-blue text-opacity-50"
+                  >/ 100</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex justify-between items-center px-4 py-3 rounded-lg bg-primary-orangey-yellow bg-opacity-5 my-3"
+            >
+              <div class="flex gap-3">
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                <span class="text-primary-orangey-yellow">Memory</span>
+              </div>
+              <div class="font-bold">
+                <span class="text-neutral-dark-gray-blue">92</span>
+                <span class="text-neutral-dark-gray-blue text-opacity-50"
+                  >/ 100</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex justify-between items-center px-4 py-3 rounded-lg bg-primary-green-teal bg-opacity-5 my-3"
+            >
+              <div class="flex gap-3">
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                <span class="text-primary-green-teal">Verbal</span>
+              </div>
+              <div class="font-bold">
+                <span class="text-neutral-dark-gray-blue">61</span>
+                <span class="text-neutral-dark-gray-blue text-opacity-50"
+                  >/ 100</span
+                >
+              </div>
+            </div>
+            <div
+              class="flex justify-between items-center px-4 py-3 rounded-lg bg-primary-cobalt-blue bg-opacity-5 my-3"
+            >
+              <div class="flex gap-3">
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                <span class="text-primary-cobalt-blue">Visual</span>
+              </div>
+              <div class="font-bold">
+                <span class="text-neutral-dark-gray-blue">72</span>
+                <span class="text-neutral-dark-gray-blue text-opacity-50"
+                  >/ 100</span
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="w-full py-3 bg-neutral-dark-gray-blue text-white rounded-full hover:bg-gradient-to-b hover:from-gradients-background-light-slate-blue hover:to-gradients-background-light-royal-blue continue-button"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
